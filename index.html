@@ -5,32 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samdak Theme - Fallout 4 Inspired</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #2b3a3a; /* Dark muted green */
-            color: #d4c8a2; /* Light muted brown */
-            font-family: 'Press Start 2P', cursive; /* Fallout-inspired font */
+            background: url('download (1).gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #d4c8a2;
+            font-family: 'Press Start 2P', cursive;
+            animation: fadeIn 2s ease-in-out;
+            margin: 0;
         }
         .btn-fallout {
-            background-color: #2f4b6b; /* Dark olive green */
-            color: #d4c8a2; /* Light muted brown */
+            background-color: #2f4b6b;
+            color: #d4c8a2;
+            transition: background-color 0.3s ease;
+            animation: bounce 1s infinite;
         }
         .btn-fallout:hover {
-            background-color: #0d5739; /* Olive drab */
+            background-color: #0d5739;
         }
         .header {
-            color: #216cc2; /* Gold */
+            color: #216cc2;
+            animation: slideInFromLeft 1s ease-out;
         }
         .container {
             max-width: 600px;
-            margin-top: 50px;
+            margin: 50px auto;
             text-align: center;
+            background-color: rgba(43, 58, 58, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container mx-auto p-4">
+    <div class="container">
         <h1 class="header text-4xl font-bold mb-4">Samdak Theme - Fallout 4 Inspired</h1>
         <p class="mb-4">
             Samdak Theme is a custom theme for Discord that enhances the visual appearance with colors and styles inspired by Fallout 4. Download the theme and apply it to your Discord to enjoy a unique, post-apocalyptic look.
